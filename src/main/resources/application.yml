@@ -1,0 +1,13 @@
+server:
+    port: 8080
+spring:
+    profiles:
+        active: dev
+    freemarker:
+        cache: false
+        template-loader-path: classpath:/templates
+
+mybatis:
+    # 扫描实体类和mapping里面的XML文件
+    type-aliases-package: com.pf.org.cms.entity
+    mapper-locations: classpath:mapping/*.xml
